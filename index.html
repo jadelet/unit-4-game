@@ -13,19 +13,24 @@
 <!--  setup framework -->
 <div class="container-fluid">
   <div class="row">
-      <div id="header-col" class="col-12">Header Row</div>
+      <div id="header-col" class="col-12 text-center">Header Row</div>
   </div>    
   <div id="game-row" class="row">
     <div id="left/TopFrame" class="col-xs-12 col-sm-12 col-md-3 col-lg-3"> 
-      <img src="assets/images/crystal_cave_bkgd.jpg"  width="100%" height="auto" alt="cave background"> 
+      <img src="assets/images/crystal_cave_bkgd.jpg"  width="100%" height="100%" alt="cave background"> 
     </div>
 
     <div id=game-column class="col-xs-12col-sm-6 col-md-6 col-lg-6">
-      <div id ="numberRow" class="row">Random Number
-        <div class="col-12"></div>
+      <div id ="numberRow" class="row ">
+        <div class="col-12 text-center">  <h1>The computer wants you to match:<span class="badge badge-danger">0</span></a><br></h1></div>
       </div>
       <div id ="titleRow" class="row">
-        <div class="col-12">Title__________________________________________________Title</div>
+        <div id=gemcolumn class="col-12 jumbotron text-center">
+          <h1>CRYSTAL-MATCH</h1>
+        <h2>"The blackjack (well, sort of) of random crystal values."</h2>
+        <br></br>
+        <p>Just click on a crystal and watch the magic, as your crystals' value is tallied against the computer's offer. If they match, you win. Don't worry, the picture tells you absolutely nothing at all about the actual value of the crystal.This is just a guessing game.</p>
+        </div>
       </div>
       <div id ="gemRow" class="row">
           <div id="gem1" class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
@@ -43,12 +48,11 @@
         </div>
         </div>
     <div id="right/BottomFrame" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-      <img src="assets/images/crystal_cave_bkgd.jpg"  width="100%" height="auto" alt="cave background">
+      <img src="assets/images/crystal_cave_bkgd.jpg"  width="100%" height="100%" alt="cave background">
     </div>
   </div>
   <div class="row">
-      <div class="col-12">maybe I'll put a pretty footer here</div>
-  </div>
+      <div id=crystal-value class="col-12 text-center"> <h1>Your total crystal value so far:<span class="badge badge-danger">0</span></a><br></h1></div>
 </div>  
 
 
