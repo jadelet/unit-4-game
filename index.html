@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css">
-<link rel="stylesheet" href="assets/style.css">
+<link rel="stylesheet" href="assets/css/style.css">
 <title>Crystal Game</title>
 </head>
 <body>
@@ -18,11 +18,12 @@
   <div id="game-row" class="row">
     <div id="left/TopFrame" class="col-xs-12 col-sm-12 col-md-3 col-lg-3"> 
       <img src="assets/images/crystal_cave_bkgd.jpg"  width="100%" height="100%" alt="cave background"> 
+      <button type="button" class="btn btn-primary centered">Wins<span class="badge" id="WinsHTML">0</span></button>
     </div>
 
     <div id=game-column class="col-xs-12col-sm-6 col-md-6 col-lg-6">
       <div id ="numberRow" class="row ">
-        <div class="col-12 text-center">  <h1>The computer wants you to match:<span class="badge badge-danger">0</span></a><br></h1></div>
+        <div  class="col-12 text-center">  <h1>The computer wants you to match:<span class="badge badge-danger" id="RandomNumber">0</span></a><br></h1></div>
       </div>
       <div id ="titleRow" class="row">
         <div id=gemcolumn class="col-12 jumbotron text-center">
@@ -49,6 +50,7 @@
         </div>
     <div id="right/BottomFrame" class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
       <img src="assets/images/crystal_cave_bkgd.jpg"  width="100%" height="100%" alt="cave background">
+      <button type="button" class="btn btn-primary centered">Losses<span class="badge" id="LossesHTML">0</span></button>
     </div>
   </div>
   <div class="row">

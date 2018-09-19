@@ -1,23 +1,22 @@
 // Computer selected solution 
-var randomNumberValue = ()
+
 // vars to hold random values for gemstones
 var diamondValue = ()
 var emeraldValue = ()
 var rubyValue = ()
 var sapphireValue = ()
 
-// vars to pull html elements to be manipulated?
 
 // Game counters
 var winsCounter = 0;
 var lossesCounter = 0;
 
 
-// generate random number between 19-120
+// Computer selected solution 
+variable randomNumber = Math.floor(Math.random() * (100) ) + 20;
+console.log("Your random number is" + randomNumber);
 
-function= randomNumberator(){
-  Math.floor(Math.random() * 100)+20;
-  console.log()
+}
 
 
 
@@ -26,5 +25,6 @@ function= randomNumberator(){
 $(document).ready(function(){
 
   // jQuery methods go here...
+  $(#randomNumber).text("")
 
 });
