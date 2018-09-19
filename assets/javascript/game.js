@@ -1,30 +1,37 @@
 // Computer selected solution 
 
 // vars to hold random values for gemstones
-var diamondValue = ()
-var emeraldValue = ()
-var rubyValue = ()
-var sapphireValue = ()
+var crystalz =""
 
 
 // Game counters
 var winsCounter = 0;
 var lossesCounter = 0;
 
+//variable to hold values for computer generated random number
+var numberz = ""
 
-// Computer selected solution 
-variable randomNumber = Math.floor(Math.random() * (100) ) + 20;
-console.log("Your random number is" + randomNumber);
-
-}
 
 
 
 // Document Ready event before jquery entries
 
-$(document).ready(function(){
-
+$(function() {
+console.log("Test")
   // jQuery methods go here...
-  $(#randomNumber).text("")
+
+  // Computer selected solution 
+numberz = Math.floor((Math.random() * 100 ) + 20);
+console.log("Your random number is " + numberz);
+$("#randomnumber").text(numberz);
 
 });
+
+
+
+$("#gemRow").click(function() {
+crystalz = Math.floor((Math.random() * 12) + 1);
+console.log("Your crystal vlaue is " + crystalz);
+
+});
+
