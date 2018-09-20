@@ -26,15 +26,15 @@ function restartGame() {
 function changeScore() {
     if (playertotal === numberz) {
     console.log("winner, winner, chicken dinner!");
-
-    $("#winsHTML").html(winsCounter + 1);
+  winsCounter++
+    $("#winsHTML").html(winsCounter);
     $(restartGame())
   } 
   else if (playertotal > numberz) {
     console.log("LOSER!");
-    
-
-    $("#lossesHTML").html(lossesCounter + 1);
+    console.log(lossesCounter+1)
+   lossesCounter++
+    $("#lossesHTML").html(lossesCounter);
     $(restartGame())
   }
   
